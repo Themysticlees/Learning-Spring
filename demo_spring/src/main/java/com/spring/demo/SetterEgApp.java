@@ -13,9 +13,10 @@ public class SetterEgApp {
 		CricketCoach theCoach = context.getBean("myCricketCoach",CricketCoach.class);
 		
 		//call methods of the bean
-		
+		//Dependency injected through setter methods 
 		System.out.println(theCoach.getDailyFortune());
 		System.out.println(theCoach.getEmailAddress());
+		System.out.println(theCoach.getTeam());
 		
 		//close context
 		context.close();

@@ -8,17 +8,18 @@ public class TrackCoach implements Coach {
 		
 	}
 	
+	//Bean provided through Constructor injection
 	public TrackCoach(FortuneService fortuneService) {
 		this.fortuneService=fortuneService;
 	}
 	
-	@Override
+	//@Override
 	public String getDailyWorkout() {
 		// TODO Auto-generated method stub
 		return "Run 5 km";
 	}
 
-	@Override 
+	//@Override 
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
 		return "Just Do It!"+fortuneService.getFortune();
